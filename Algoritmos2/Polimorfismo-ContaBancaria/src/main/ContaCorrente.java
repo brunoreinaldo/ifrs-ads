@@ -9,8 +9,10 @@ package main;
  *
  * @author 05220140
  */
-public class Main {
-    public static void main (String[] args) {
-        
+public class ContaCorrente extends ContaBancaria {
+    
+    @Override
+    double calcularSaldo(){
+        return super.saldo - super.saldo * 0.1;
     }
 }
